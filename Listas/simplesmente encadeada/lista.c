@@ -10,7 +10,7 @@ int listaVazia(Lista *lista){
 }
 
 int listaCheia(Lista *lista){
-    return lista->tamnho == MAX;
+    return lista->tamanho == MAX;
 }
 
 int inserirFinal(Lista *lista, float nota){
@@ -64,3 +64,81 @@ int removerPosicao(Lista *lista, int posicao){
     return 1;
 }
 
+int buscarNota(Lista *lista, float nota) {
+
+    for (int i = 0; i < lista->tamanho; i++) {
+
+        if (lista->notas[i] == nota) {
+            return i;
+        }
+    }
+
+    return -1;
+}
+
+void imprimirLista(Lista *lista){
+
+    if(listaVazia(lista)){
+        printf("A lista esta vazia.\n");
+        return;
+    }
+
+    printf("\nNotas da lista:\n");
+
+    for(int i = 0; i < lista->tamanho; i++){
+        printf("Posicao %d: %.2f\n", i, lista->notas[i]);
+    }
+}
+
+float calcularMedia(Lista *lista) {
+
+    if (listaVazia(lista)) {
+        return 0.0;
+    }
+
+    float soma = 0.0;
+
+    for (int i = 0; i < lista->tamanho; i++) {
+        soma += lista->notas[i];
+    }
+
+    return soma / lista->tamanho;
+}
+
+
+float maiorNota(Lista *lista) {
+
+    if (listaVazia(lista)) {
+        return 0.0;
+    }
+
+    float maior = lista->notas[0];
+
+    for (int i = 1; i < lista->tamanho; i++) {
+
+        if (lista->notas[i] > maior) {
+            maior = lista->notas[i];
+        }
+    }
+
+    return maior;
+}
+
+
+float menorNota(Lista *lista) {
+
+    if (listaVazia(lista)) {
+        return 0.0;
+    }
+
+    float menor = lista->notas[0];
+
+    for (int i = 1; i < lista->tamanho; i++) {
+
+        if (lista->notas[i] < menor) {
+            menor = lista->notas[i];
+        }
+    }
+
+    return menor;
+}

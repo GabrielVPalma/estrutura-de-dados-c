@@ -1,4 +1,4 @@
-#ifdef LISTA_H
+#ifndef LISTA_H
 #define LISTA_H
 
 #define MAX 100
