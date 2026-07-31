@@ -1,4 +1,4 @@
-#Lista Estática:
+# Lista Estática:
 
 Implementação de uma lista estática sequencial utilizando a linguagem C.
 
