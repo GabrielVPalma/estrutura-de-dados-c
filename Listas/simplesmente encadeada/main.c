@@ -5,6 +5,9 @@ int main(){
 
     int codigo_busca;
     int codigo_remover;
+    char opcao;
+
+    do{
     Lista lista;
     
     Produto p1 = {106, "Teclado", 150.00};
@@ -54,5 +57,12 @@ int main(){
 
     liberarLista(&lista);
 
+    printf("Deseja executar novamente? (s/n): ");
+    scanf(" %c", &opcao);
+
+} while(opcao == 's' || opcao == 'S');
+
+    printf("Programa encerrado...\n");
+    
     return 0;
 }
