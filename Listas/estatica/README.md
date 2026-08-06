@@ -26,7 +26,7 @@ Uma lista estática (ou sequencial) é uma estrutura de dados linear em que os e
 
 ## Representação
 
-Uma lista sequencial estática utiliza um vetor de tamanho fixo para armazenar os elementos em posições consecutivas da memória.
+Uma lista sequencial estática utiliza um vetor de tamanho fixo para armazenar os elementos em posições consecutivas da memória, podendo ser representada da seguinte forma:
 
 ```text
 Lista
