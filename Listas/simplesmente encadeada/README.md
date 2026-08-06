@@ -36,4 +36,5 @@ A estrutura pode ser representada da seguinte forma:
    |
    v
 [Produto | *] -> [Produto | *] -> [Produto | NULL]
+```
 
