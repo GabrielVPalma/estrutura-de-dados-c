@@ -4,6 +4,10 @@ Implementação de uma **lista simplesmente encadeada em C**, desenvolvida para 
 
 O projeto demonstra o uso de structs, ponteiros, alocação dinâmica de memória e operações básicas em uma lista encadeada.
 
+## Sobre
+
+Este projeto foi desenvolvido como parte dos meus estudos de Estruturas de Dados.
+
 ## Conceito
 
 Uma lista simplesmente encadeada é uma estrutura de dados formada por nós.
