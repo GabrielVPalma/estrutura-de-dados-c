@@ -1,6 +1,6 @@
 # Lista Simplesmente Encadeada
 
-Implementação de uma **lista simplesmente encadeada em C**, desenvolvida para estudos de Estruturas de Dados.
+Implementação de uma **lista simplesmente encadeada em C**.
 
 O projeto demonstra o uso de structs, ponteiros, alocação dinâmica de memória e operações básicas em uma lista encadeada.
 
