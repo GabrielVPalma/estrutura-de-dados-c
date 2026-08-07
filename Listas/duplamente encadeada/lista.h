@@ -30,6 +30,8 @@ void inserirInicio(Lista *lista, Livro livro);
 
 void inserirFim(Lista *lista, Livro livro);
 
+int removerLivro(Lista *lista, int codigo);
+
 void listarInicioFim(Lista *lista);
 
 void listarFimInicio(Lista *lista);

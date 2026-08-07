@@ -35,16 +35,13 @@ int main(){
 
         No *resultado = buscarLivro(&lista, codigo_busca);
 
-        if (resultado != NULL)
-        {
+        if(resultado != NULL){
             printf("\nLivro encontrado!\n");
             printf("Codigo: %d\n", resultado->livro.codigo);
             printf("Titulo: %s\n", resultado->livro.titulo);
             printf("Autor : %s\n", resultado->livro.autor);
             printf("Ano   : %d\n", resultado->livro.ano);
-        }
-        else
-        {
+        }else{
             printf("\nLivro nao encontrado!\n");
             printf("Tente novamente com um codigo valido...\n");
         }
@@ -54,12 +51,9 @@ int main(){
 
         printf("\nRemovendo o livro de codigo %d\n", codigo_remover);
 
-        if (removerLivro(&lista, codigo_remover))
-        {
+        if(removerLivro(&lista, codigo_remover)){
             printf("\nLivro removido com sucesso!\n");
-        }
-        else
-        {
+        }else{
             printf("\nLivro nao encontrado!\n");
             printf("Tente novamente com um codigo valido...\n");
         }
@@ -75,10 +69,9 @@ int main(){
         printf("\nDeseja executar novamente? (s/n): ");
         scanf(" %c", &opcao);
 
-    } while (opcao == 's' || opcao == 'S');
+    } while(opcao == 's' || opcao == 'S');
 
     printf("\nPrograma encerrado...\n");
 
     return 0;
 }
-    
