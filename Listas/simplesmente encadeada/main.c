@@ -8,61 +8,65 @@ int main(){
     char opcao;
 
     do{
-    Lista lista;
+        Lista lista;
     
-    Produto p1 = {106, "Teclado", 150.00};
-    Produto p2 = {107, "Mouse", 80.00};
-    Produto p3 = {108, "Monitor", 980.00};
-    Produto p4 = {109, "Headset", 350.00};
+        Produto p1 = {106, "Teclado", 150.00};
+        Produto p2 = {107, "Mouse", 80.00};
+        Produto p3 = {108, "Monitor", 980.00};
+        Produto p4 = {109, "Headset", 350.00};
 
-    inicializarLista(&lista);
+        inicializarLista(&lista);
 
-    printf("Inserindo produtos...\n");
+        printf("\n===== LISTA SIMPLESMENTE ENCADEADA =====\n");
+
+        printf("\nInserindo produtos...\n");
     
-    inserirInicio(&lista, p1);
-    inserirFim(&lista, p2);
-    inserirFim(&lista, p3);
-    inserirInicio(&lista, p4);
+        inserirInicio(&lista, p1);
+        inserirFim(&lista, p2);
+        inserirFim(&lista, p3);
+        inserirInicio(&lista, p4);
 
-    listarProdutos(&lista);
+        listarProdutos(&lista);
 
-    printf("Informe o codigo do produto que deseja buscar: ");
-    scanf("%d", &codigo_busca);
+        printf("Informe o codigo do produto que deseja buscar: ");
+        scanf("%d", &codigo_busca);
 
-    No *resultado = buscarProduto(&lista, codigo_busca);
+        No *resultado = buscarProduto(&lista, codigo_busca);
 
-    if(resultado != NULL){
-        printf("Produto encontrado!\n");
-        printf("Nome: %s\n", resultado->produto.nome);
-        printf("Preco: R$ %.2f\n", resultado->produto.preco);
+        if(resultado != NULL){
+            printf("Produto encontrado!\n");
+            printf("Nome: %s\n", resultado->produto.nome);
+            printf("Preco: R$ %.2f\n", resultado->produto.preco);
 
-    }else{
-        printf("Produto nao encontrado!\n");
-        printf("Tente novamente com um codigo valido...\n");
-    }
+        }else{
+            printf("Produto nao encontrado!\n");
+            printf("Tente novamente com um codigo valido...\n");
+        }
 
-    printf("Informe o codigo do produto que deseja remover: ");
-    scanf("%d", &codigo_remover);
+        printf("\nInforme o codigo do produto que deseja remover: ");
+        scanf("%d", &codigo_remover);
 
-    printf("\nRemovendo o produto de codigo %d\n", codigo_remover);
+        printf("\nRemovendo o produto de codigo %d\n", codigo_remover);
 
-    if(removerProduto(&lista, codigo_remover)){
-        printf("Produto removido com sucesso!\n");
-    }else{
-        printf("Produto nao encontrado!\n");
-        printf("Tente novamente com um codigo valido...\n");
-    }
+        if(removerProduto(&lista, codigo_remover)){
+            printf("\nProduto removido com sucesso!\n");
+        }else{
+            printf("\nProduto nao encontrado!\n");
+            printf("Tente novamente com um codigo valido...\n");
+        }
 
-    listarProdutos(&lista);
+        printf("\nLista atualizada:\n");
 
-    liberarLista(&lista);
+        listarProdutos(&lista);
 
-    printf("Deseja executar novamente? (s/n): ");
-    scanf(" %c", &opcao);
+        liberarLista(&lista);
 
-} while(opcao == 's' || opcao == 'S');
+        printf("\nDeseja executar novamente? (s/n): ");
+        scanf(" %c", &opcao);
 
-    printf("Programa encerrado...\n");
+    } while(opcao == 's' || opcao == 'S');
+
+    printf("\nPrograma encerrado...\n");
     
     return 0;
 }
