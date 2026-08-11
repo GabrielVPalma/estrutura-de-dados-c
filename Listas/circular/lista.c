@@ -92,3 +92,57 @@ No *buscarFuncionarios(Lista *lista, int codigo){
     return NULL;
 }
 
+int removerFuncionario(Lista *lista, int codigo){
+    if(listaVazia(lista)){
+        return 0;
+    }
+
+    No *atual = lista->inicio;
+    No *anterior = lista->fim;
+
+    do{
+        if(atual->funcionario.codigo == codigo){
+            if(atual == lista->inicio && atual == lista->fim){ //Caso exista apenas um elemento a na lista;
+                lista->inicio = NULL;
+                lista->fim = NULL;
+            }else if(atual == lista->inicio){ //Caso o elemento a ser removido seja o primeiro;
+                lista->inicio = atual->prox;
+                lista->fim->prox = lista->inicio;
+            }else if(atual == lista->fim){ //Caso o elemento a ser removido seja o ultimo;
+                anterior->prox = lista->inicio;
+                lista->fim = anterior;
+            }else{ //Caso o elemento a ser removido esteja no meio;
+                anterior->prox = atual->prox;
+            }
+
+            free(atual);
+            
+            return 1;
+        }
+
+        anterior = atual;
+        atual = atual->prox;
+
+    } while(atual != lista->inicio);
+
+    return 0;
+}
+
+void liberarLista(Lista *lista){
+    if(listaVazia(lista)){
+        return;
+    }
+
+    No *atual = lista->inicio;
+    No *proximo;
+
+    do{
+        proximo = atual->prox;
+        free(atual);
+        atual = proximo;
+
+    } while(atual != lista->inicio);
+
+    lista->inicio = NULL;
+    lista->fim = NULL;
+}
