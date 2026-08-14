@@ -30,7 +30,7 @@ int main(){
         printf("\nInforme o codigo do funcionario que deseja buscar: ");
         scanf("%d", &codigo_busca);
 
-        No *resultado = buscarFuncionarios(&lista, codigo_busca);
+        No *resultado = buscarFuncionario(&lista, codigo_busca);
 
         if(resultado != NULL){
             printf("\nFuncionario encontrado com sucesso!\n");
