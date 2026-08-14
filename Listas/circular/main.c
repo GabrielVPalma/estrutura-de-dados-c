@@ -21,9 +21,9 @@ int main(){
         printf("\nInserindo funcionarios...\n");
 
         inserirInicio(&lista, f1);
-        InserirInicio(&lista, f2);
-        InserirFim(&lista, f3);
-        InserirFim(&lista, f4);
+        inserirInicio(&lista, f2);
+        inserirFim(&lista, f3);
+        inserirFim(&lista, f4);
 
         listarFuncionarios(&lista);
 
