@@ -30,7 +30,7 @@ void inserirFim(Lista *lista, Funcionario funcionario);
 
 void listarFuncionarios(Lista *lista);
 
-No *buscarFuncionarios(Lista *lista);
+No *buscarFuncionario(Lista *lista, int codigo);
 
 int removerFuncionario(Lista *lista, int codigo);
 

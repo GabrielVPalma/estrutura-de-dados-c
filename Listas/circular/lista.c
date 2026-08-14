@@ -74,7 +74,7 @@ void listarFuncionarios(Lista *lista){
     } while(aux != lista->inicio);
 }
 
-No *buscarFuncionarios(Lista *lista, int codigo){
+No *buscarFuncionario(Lista *lista, int codigo){
     if(listaVazia(lista)){
         return NULL;
     }
