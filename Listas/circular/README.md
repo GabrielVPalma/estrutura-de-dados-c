@@ -1,6 +1,6 @@
 # Lista Circular
 
-Implementação de uma **lista circula em C**.
+Implementação de uma **lista circular em C**.
 
 O projeto demonstra o uso de structs, ponteiros, alocação dinâmica de memória e operações fundamentais de uma lista circular.
 
@@ -19,6 +19,9 @@ Neste projeto, cada nó possui:
 - Ao chegar ao fim, temos um ponteiro para o primeiro elemento, mantendo a circularidade.
 
 A lista mantém ponteiros para o primeiro (`inicio`) e para o último (`fim`) elemento.
+
+
+Vale ressaltar que a lista circular em questão, por ser simplesmente circular, não possui ponteiro para o nó anterior, como conhecido na duplamente encadeada, sendo assim, a navegação fica mais restrita, porém, o fato de ser circular acaba "compensando" essa questão, tendo a lista sua eficiência em aplicações específicas.
 
 ## Operações implementadas
 
