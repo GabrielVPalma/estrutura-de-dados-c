@@ -38,15 +38,41 @@ int main(){
             break;
 
             case 2:
+            if(pop(&pilha, &acao)){
+                printf("\nAcao desfeita: %s\n", acao.descricao);
+            }else{
+                printf("\nNao foi possivel desfazer. A pilha esta vazia!\n");
+            }
+
+            break;
+
+            case 3:
+            if(top(&pilha, &acao)){
+                printf("\nUltima acao: %s\n", acao.descricao);
+            }else{
+                printf("\nA pilha esta vazia!\n");
+            }
+
+            break;
+
+            case 4:
+            listarPilha(&pilha);
+            break;
+
+            case 5:
+            limparPilha(&pilha);
+            printf("\nHistorico limpo com sucesso!\n");
+            break;
             
+            case 0:
+            printf("\nPrograma encerrado...\n");
+            break;
+
+            default:
+            printf("\nOpcao invalida!\n");
         }
-    }
 
-
-
-
-
-
+    } while(opcao != 0);
 
     return 0;
 }
