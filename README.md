@@ -11,8 +11,8 @@ O objetivo deste projeto é implementar e compreender, na prática, diferentes e
 ### Listas
 
 - [Lista Sequencial Estática](./Listas/estatica)
-- [Lista Simplesmente Encadeada](./Listas/simplesmente_encadeada)
-- [Lista Duplamente Encadeada](./Listas/duplamente_encadeada)
+- [Lista Simplesmente Encadeada](./Listas/simplesmente encadeada)
+- [Lista Duplamente Encadeada](./Listas/duplamente encadeada)
 - [Lista Circular](./Listas/circular)
 
 ### Pilhas
