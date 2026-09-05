@@ -18,7 +18,7 @@ int enfileirar(Fila *fila, Cliente cliente){
 }
 
 int desenfileirar(Fila *fila, Cliente *cliente){
-    int (filaVazia(fila)){
+    if(filaVazia(fila)){
         return 0;
     }
 
@@ -55,7 +55,7 @@ int listarFila(Fila *fila){
     printf("\n===== FILA DE ATENDIMENTO =====\n");
 
     for(int i = fila->inicio; i < fila->fim; i++){
-        printf("Senha: %d | Nome: %s\n", fila->elemento[i].senha, fila->elemento[i].nome);
+        printf("Senha: %d | Nome: %s\n", fila->elementos[i].senha, fila->elementos[i].nome);
     }
 }
 
