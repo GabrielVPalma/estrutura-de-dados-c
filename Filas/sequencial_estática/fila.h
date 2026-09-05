@@ -31,6 +31,7 @@ int filaCheia(Fila *fila);
 
 void listarFila(Fila *fila);
 
+//Remove todos os elementos da fila
 void limparFila(Fila *fila);
 
 #endif
