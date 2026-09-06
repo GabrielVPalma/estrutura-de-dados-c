@@ -48,7 +48,7 @@ int main(){
 
                 printf("Digite o nome do cliente: ");
                 fgets(cliente.nome, sizeof(cliente.nome), stdin);
-                cliente.nome[strcspm(cliente.nome, "\n")] = '\0';
+                cliente.nome[strcspn(cliente.nome, "\n")] = '\0';
                     
                 if(enfileirar(&fila, cliente)){
                     printf("\nCliente adicionado com sucesso!\n");

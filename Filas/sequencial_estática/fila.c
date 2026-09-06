@@ -46,7 +46,7 @@ int filaCheia(Fila *fila){
     return fila->fim == MAX;
 }
 
-int listarFila(Fila *fila){
+void listarFila(Fila *fila){
     if(filaVazia(fila)){
         printf("\nA fila esta vazia!\n");
         return;
