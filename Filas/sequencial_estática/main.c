@@ -43,8 +43,21 @@ int main(){
                 }
                     
                 printf("\nDigite a senha do cliente: ");
-                scanf("%d", &cliente.senha);
-                getchar();
+                if(scanf("%d", &cliente.senha) != 1){
+                    printf("\nSenha invalida! Digitar somente numeros...\n");
+                    
+                    while(getchar() != '\n');
+
+                    continue;
+                }   
+
+                if (getchar() != '\n') {
+                    printf("\nSenha invalida! Digite somente numeros.\n");
+
+                    while (getchar() != '\n');
+
+                    continue;
+                }
 
                 printf("Digite o nome do cliente: ");
                 fgets(cliente.nome, sizeof(cliente.nome), stdin);
