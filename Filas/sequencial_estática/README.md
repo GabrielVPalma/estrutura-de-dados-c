@@ -161,6 +161,8 @@ O programa apresenta um menu interativo, permitindo um fácil entendimento ao us
 0 - Sair
 ```
 
+### Exemplo
+
 Ao adicionar os clientes: 
 
 Senha: 101
@@ -203,3 +205,26 @@ A fila passará a ser:
 
 O próximo cliente a ser atendido e removido será Maria, mantendo o princípio **FIFO**.
 
+## Conceitos praticados
+
+- Linguagem C
+- Estruturas (`struct`)
+- Vetores
+- Ponteiros
+- Ponteiros para estruturas
+- Strings
+- `fgets()`
+- `scanf()`
+- `getchar()`
+- `strcspn()`
+- Validação de entrada
+- Estruturas sequenciais
+- Fila **FIFO**
+- Controle de inicio e fim
+- Overflow e Underflow
+- Separação entre arquivos `.h` e `.c`
+- Compilação utilizando GCC
+
+## Conclusão
+
+O projeto foi importante para reforçar, na prática, o funcionamento de uma Fila Sequencial Estática, suas principais operações e o comportamento baseado no princípio **FIFO**. A implementação também permitiu compreender uma limitação importante das filas sequenciais estáticas, ela pode deixar posições livres no início do vetor sem conseguir reutilizá-las, fazendo com que a fila seja considerada cheia antes de todo o espaço do vetor estar efetivamente ocupado, servindo como base para o estudo de estruturas mais avançadas, como a Fila Circular, Fila Dinâmica e posteriormente o Deque.

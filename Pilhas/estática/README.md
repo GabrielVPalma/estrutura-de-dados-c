@@ -209,7 +209,7 @@ A pilha passará a ser:
 - `getchar()`
 - Validação de entrada
 - Estruturas sequenciais
-- Pilha LIFO
+- Pilha **LIFO**
 - Gerenciamento do topo da pilha
 - Overflow e Underflow
 - Separação entre arquivos `.h` e `.c`
