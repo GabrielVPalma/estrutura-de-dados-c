@@ -21,7 +21,7 @@ O objetivo deste projeto é implementar e compreender, na prática, diferentes e
 
 ### Filas
 
-- Em desenvolvimento
+- [Fila Sequencial Estática](./Filas)
 
 ### Deques
 
