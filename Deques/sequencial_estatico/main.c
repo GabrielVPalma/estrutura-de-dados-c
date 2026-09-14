@@ -115,17 +115,90 @@ int main(){
                 break;
 
                 case 3:
+                if(removerInicio(&deque, &cliente)){
+                    printf("\n===== CLIENTE ATENDIDO =====\n");
+                    printf("Senha: %d\n", cliente.senha);
+                    printf("Nome: %s\n", cliente.nome);
+                }else{
+                    printf("\nO deque esta vazio!\n");
+                }
+
+                break;
+
+                case 4:
+                if(removerFim(&deque, &cliente)){
+                    printf("\n===== CLIENTE REMOVIDO DO FIM=====\n");
+                    printf("Senha: %d", cliente.senha);
+                    printf("Nome: %s\n", cliente.nome);
+                }else{
+                    printf("\nO deque esta vazio!\n");
+                }
+
+                break;
+
+                case 5:
+                if(frente(&deque, &cliente)){
+                    printf("\n===== PRIMEIRO CLIENTE =====\n");
+                    printf("Senha: %d", cliente.senha);
+                    printf("Nome: %s\n", cliente.nome);
+                }else{
+                    printf("\nO deque esta vazio!\n");
+                }
+
+                break;
+
+                case 6:
+                if(tras(&deque, &cliente)){
+                    printf("\n===== ULTIMO CLIENTE =====\n");
+                    printf("Senha: %d\n", cliente.senha);
+                    printf("Nome: %s\n", cliente.nome);
+                }else{
+                    printf("\nO deque esta vazio!\n");
+                }
+
+                break;
+
+                case 7:
+                listarDeque(&deque);
+                break;
+
+                case 8:
+                if(dequeVazio(&deque)){
+                    printf("\nO deque esta vazio!\n");
+                }else{
+                    printf("\nO deque nao esta vazio!\n");
+                }
+
+                break;
+
+                case 9:
+                if(dequeCheio(&deque)){
+                    printf("\nO deque esta cheio!\n");
+                }else{
+                    printf("\nO deque nao esta cheio!\n");
+                }
+
+                break;
+
+                case 10:
+                limparDeque(&deque);
+
+                printf("\nDeque limpo com sucesso!\n");
+                
+                break;
+
+                case 0:
+                printf("\nEncerrando o programa...\n");
+
+                break;
+
             }
+        }else{
+
+            printf("\nOpcao invalida! Digite uma opcao entre 0 e 10.\n");
         }
-    }
-
-
-
-
-
-
-
-
+        
+    } while(opcao != 0);
 
     return 0;
 }
