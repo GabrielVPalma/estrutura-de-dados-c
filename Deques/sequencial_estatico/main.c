@@ -85,7 +85,7 @@ int main(){
                 printf("\nDigite a senha do cliente: ");
 
                 if(scanf("%d", &cliente.senha) != 1){
-                    printf("\nSenha invalida! Digite a somente numeros.\n");
+                    printf("\nSenha invalida! Digite somente numeros.\n");
 
                     while(getchar() != '\n');
 
@@ -127,7 +127,7 @@ int main(){
 
                 case 4:
                 if(removerFim(&deque, &cliente)){
-                    printf("\n===== CLIENTE REMOVIDO DO FIM=====\n");
+                    printf("\n===== CLIENTE REMOVIDO DO FIM =====\n");
                     printf("Senha: %d", cliente.senha);
                     printf("Nome: %s\n", cliente.nome);
                 }else{
@@ -197,7 +197,7 @@ int main(){
 
             printf("\nOpcao invalida! Digite uma opcao entre 0 e 10.\n");
         }
-        
+
     } while(opcao != 0);
 
     return 0;
