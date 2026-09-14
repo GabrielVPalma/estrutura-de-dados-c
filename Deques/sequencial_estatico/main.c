@@ -128,7 +128,7 @@ int main(){
                 case 4:
                 if(removerFim(&deque, &cliente)){
                     printf("\n===== CLIENTE REMOVIDO DO FIM =====\n");
-                    printf("Senha: %d", cliente.senha);
+                    printf("Senha: %d\n", cliente.senha);
                     printf("Nome: %s\n", cliente.nome);
                 }else{
                     printf("\nO deque esta vazio!\n");
@@ -139,7 +139,7 @@ int main(){
                 case 5:
                 if(frente(&deque, &cliente)){
                     printf("\n===== PRIMEIRO CLIENTE =====\n");
-                    printf("Senha: %d", cliente.senha);
+                    printf("Senha: %d\n", cliente.senha);
                     printf("Nome: %s\n", cliente.nome);
                 }else{
                     printf("\nO deque esta vazio!\n");
