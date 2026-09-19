@@ -25,7 +25,7 @@ O objetivo deste projeto é implementar e compreender, na prática, diferentes e
 
 ### Deques
 
-- Em desenvolvimento
+- [Deque Sequencial Estático](./Deques/sequencial_estatico/)
 
 ---
 
