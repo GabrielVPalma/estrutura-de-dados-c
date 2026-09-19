@@ -95,10 +95,16 @@ estrutura-de-dados-c/
 │   └── main.c
 │
 ├── Filas/
-│   └── Em desenvolvimento
-│
+│   ├── README.md
+|   ├── fila.h
+|   ├── fila.c
+│   └── main.c
+|
 └── Deques/
-    └── Em desenvolvimento
+    ├── README.md
+    ├── deque.h
+    ├── deque.c
+    └── main.c
 ```
 
 ---
@@ -125,8 +131,6 @@ O projeto será atualizado progressivamente conforme novas estruturas e conceito
 
 As próximas implementações previstas são:
 
-- [ ] Fila
-- [ ] Deque
 - [ ] Outras variações de estruturas de dados
 - [ ] Aprimoramento da documentação
 - [ ] Novos exemplos práticos
